@@ -1,6 +1,6 @@
 {% set name = "pylatexenc" %}
-{% set version = "2.1" %}
-{% set sha256 = "bde5ffe8ee0c159da2845f1489401ee4246a844d06b452236e59880bd6c2d6ee" %}
+{% set version = "2.2" %}
+{% set sha256 = "2b5ed04b76da57a9fdc2110d2f9764522087b47884e3ab30251f748dc60b96de" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
   entry_points:
     - latexwalker = pylatexenc.latexwalker.__main__:main
@@ -39,7 +39,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Simple LaTeX parser providing latex-to-unicode and unicode-to-latex conversion'
+  summary: Simple LaTeX parser providing latex-to-unicode and unicode-to-latex conversion
   doc_url: https://pylatexenc.readthedocs.io/en/latest
   dev_url: https://github.com/phfaist/pylatexenc
 
