@@ -5,7 +5,7 @@ Home: https://github.com/phfaist/pylatexenc
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Simple LaTeX parser providing latex-to-unicode and unicode-to-latex conversion
 
